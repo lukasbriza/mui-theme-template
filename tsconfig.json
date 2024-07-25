@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "exclude": ["dist", "node_modules"],
+  "include": [".eslintrc.cjs", "**/*.js", "**/*.ts", "**/*.tsx"],
+  "references": []
+}
