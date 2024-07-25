@@ -8,7 +8,7 @@ export type WebFontWeight = 'bold' | 'medium' | 'regular'
 /**
  * E.ON typography variants.
  */
-export interface WebTypographyVariants {
+export type WebTypographyVariants = {
   h1: CSSProperties
   h2: CSSProperties
   h3: CSSProperties

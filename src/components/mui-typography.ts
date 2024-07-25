@@ -1,4 +1,4 @@
-import type { Components } from '@mui/material/styles/index'
+import type { Components } from '@mui/material/styles/index.js'
 import type { Theme } from '@mui/system'
 
 export const MuiTypography = {

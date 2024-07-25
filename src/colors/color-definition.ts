@@ -1,11 +1,11 @@
 import type { Palette } from '@mui/material'
 
-import { bodyTextColors } from './body-text'
-import { borderColors } from './border'
-import { iconColors } from './icon'
-import { primaryColors } from './primary'
-import { stateColors } from './state'
-import { surfaceColors } from './surface'
+import { bodyTextColors } from './body-text.js'
+import { borderColors } from './border.js'
+import { iconColors } from './icon.js'
+import { primaryColors } from './primary.js'
+import { stateColors } from './state.js'
+import { surfaceColors } from './surface.js'
 
 /**
  * Used color keys from Palette
@@ -16,7 +16,7 @@ type PaletteKey =
 
 type Colors = Record<string, unknown>
 
-interface ColorType {
+type ColorType = {
   /**
    * Palette key where its colors can be found under.
    */

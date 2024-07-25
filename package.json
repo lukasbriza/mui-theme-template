@@ -2,7 +2,6 @@
   "name": "@lukasbriza/theme",
   "version": "0.0.0",
   "private": true,
-  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

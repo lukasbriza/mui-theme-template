@@ -34,4 +34,4 @@ export const size: WebSize = {
   'size-56': 224,
   'size-60': 240,
   'size-64': 256,
-};
+}

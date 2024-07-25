@@ -1,5 +1,5 @@
-import { basicColors } from './basic'
-import { brandColors } from './brand'
+import { basicColors } from './basic.js'
+import { brandColors } from './brand.js'
 
 export const bodyTextColors = {
   active: brandColors.primary.light,

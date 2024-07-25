@@ -1,6 +1,6 @@
 import { alpha } from '@mui/material'
 
-import { primary } from './constants'
+import { primary } from './constants.js'
 
 export const brandColors = {
   primary: {

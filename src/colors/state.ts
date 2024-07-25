@@ -1,4 +1,4 @@
-import { primary } from './constants'
+import { primary } from './constants.js'
 
 export const stateColors = {
   success: {

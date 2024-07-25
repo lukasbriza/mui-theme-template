@@ -1,7 +1,7 @@
 /**
  * Web shape config
  */
-export interface WebShape {
+export type WebShape = {
   borderRadiusNone: number
   borderRadiusXs: number
   borderRadiusS: number

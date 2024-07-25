@@ -1,6 +1,6 @@
 import { alpha } from '@mui/material'
 
-import { black, gray, white } from './constants'
+import { black, gray, white } from './constants.js'
 
 export const basicColors = {
   gray1: gray,

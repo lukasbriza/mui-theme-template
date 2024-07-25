@@ -1,4 +1,4 @@
-import { brandColors } from './brand'
+import { brandColors } from './brand.js'
 
 export const primaryColors = {
   main: brandColors.primary.main,

@@ -1,2 +1,2 @@
-export * from './font-style'
-export * from './font-variants-definition'
+export * from './font-style.js'
+export * from './font-variants-definition.js'

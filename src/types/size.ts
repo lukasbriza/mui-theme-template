@@ -1,7 +1,7 @@
 /**
  * Web size config
  */
-export interface WebSize {
+export type WebSize = {
   'size-0': number
   'size-Px': number
   'size-0_5': number

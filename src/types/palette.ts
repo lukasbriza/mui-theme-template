@@ -1,4 +1,4 @@
-export interface BaseWebPalette {
+export type BaseWebPalette = {
   active: string
   activeHover: string
   primary: string
@@ -6,7 +6,7 @@ export interface BaseWebPalette {
   inverse: string
 }
 
-export interface WebSurfacePalette {
+export type WebSurfacePalette = {
   active: string
   activeHover: string
   activeAlpha5: string
@@ -23,7 +23,7 @@ export interface WebSurfacePalette {
   inverse: string
 }
 
-export interface WebTextPalette {
+export type WebTextPalette = {
   active: string
   activeHover: string
   primary: string
@@ -33,7 +33,7 @@ export interface WebTextPalette {
   inverse: string
 }
 
-export interface WebStateColor {
+export type WebStateColor = {
   main: string
   light: string
   bright: string
@@ -41,19 +41,19 @@ export interface WebStateColor {
   strong: string
 }
 
-export interface WebStatePalette {
+export type WebStatePalette = {
   success: WebStateColor
   warning: WebStateColor
   error: WebStateColor
 }
 
-export type WebIconPalette = BaseWebPalette;
-export type WebBorderPalette = BaseWebPalette;
+export type WebIconPalette = BaseWebPalette
+export type WebBorderPalette = BaseWebPalette
 
-export interface WebPalette {
-  bodyText: WebTextPalette;
-  icon: WebIconPalette;
-  surface: WebSurfacePalette;
-  border: WebBorderPalette;
-  state: WebStatePalette;
+export type WebPalette = {
+  bodyText: WebTextPalette
+  icon: WebIconPalette
+  surface: WebSurfacePalette
+  border: WebBorderPalette
+  state: WebStatePalette
 }

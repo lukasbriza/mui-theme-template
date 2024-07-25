@@ -1,11 +1,11 @@
-import type { TypographyOptions, TypographyStyle } from '@mui/material/styles/createTypography'
-import type { TypographyVariantsOptions } from '@mui/material/styles/index'
+import type { TypographyOptions, TypographyStyle } from '@mui/material/styles/createTypography.js'
+import type { TypographyVariantsOptions } from '@mui/material/styles/index.js'
 
-import { breakpoints } from './breakpoints'
-import * as webFontStyle from './fonts/font-style'
+import { breakpoints } from './breakpoints.js'
+import * as webFontStyle from './fonts/font-style.js'
 
 const { fontFamily, headingsFontFamily, htmlFontSize, fontWeightRegular, fontWeightMedium, fontWeightBold } =
-  webFontStyle;
+  webFontStyle
 
 export const variants: TypographyVariantsOptions = {
   h1: {
@@ -73,7 +73,7 @@ export const variants: TypographyVariantsOptions = {
   overline: undefined as unknown as TypographyStyle,
   subtitle1: undefined as unknown as TypographyStyle,
   subtitle2: undefined as unknown as TypographyStyle,
-};
+}
 
 export const typography: TypographyOptions = {
   fontFamily,
@@ -83,4 +83,4 @@ export const typography: TypographyOptions = {
   fontWeightBold,
   fontWeightLight: false,
   ...variants,
-};
+}

@@ -1,4 +1,4 @@
-export interface WebSurfaces {
+export type WebSurfaces = {
   /**
    * Card shadow
    */
