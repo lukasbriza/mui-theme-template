@@ -1,10 +1,10 @@
-import { colorDefinition } from '../src/colors/color-definition.js';
+import { colorDefinition } from '../src/colors/color-definition.js'
 
 export const palette = colorDefinition.map(({ key, title, colors }) => ({
   title,
   subtitle: `theme.palette.${key}`,
   colors,
-}));
+}))
 
 export const usage = `
 import { ThemeProvider } from '@lukasbriza/theme';
@@ -14,4 +14,4 @@ const App = () => (
     {/* App components */}
   </ThemeProvider>
 );
-`;
+`

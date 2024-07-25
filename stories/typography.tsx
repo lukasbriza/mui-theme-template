@@ -1,26 +1,26 @@
-import { Typography } from '@mui/material';
-import { Stack } from '@mui/system';
-import { Typeset } from '@storybook/blocks';
+import { Typography } from '@mui/material'
+import { Stack } from '@mui/system'
+import { Typeset } from '@storybook/blocks'
 
-import { basicColors } from '../src/colors/index.js';
+import { basicColors } from '../src/colors/index.js'
 import {
   variantsDefinition,
   fontFamily,
   fontWeightBold,
   fontWeightRegular,
   headingsFontFamily,
-} from '../src/fonts/index.js';
+} from '../src/fonts/index.js'
 
-const headingText = 'Case studies';
+const headingText = 'Case studies'
 const bodyText =
-  'We have successfully fulfilled the visions and requirements of 23+ completed projects that helped meet their business goals.';
+  'We have successfully fulfilled the visions and requirements of 23+ completed projects that helped meet their business goals.'
 
-const fontSizeToPx = (fontSize: number) => `${fontSize}px`;
+const fontSizeToPx = (fontSize: number) => `${fontSize}px`
 
-const headings = [variantsDefinition.h1, variantsDefinition.h2, variantsDefinition.h3, variantsDefinition.h4];
+const headings = [variantsDefinition.h1, variantsDefinition.h2, variantsDefinition.h3, variantsDefinition.h4]
 
-const texts = [variantsDefinition.S, variantsDefinition.M, variantsDefinition.L, variantsDefinition.XL];
-const textColor = basicColors.black;
+const texts = [variantsDefinition.S, variantsDefinition.M, variantsDefinition.L, variantsDefinition.XL]
+const textColor = basicColors.black
 
 export const Headings = () =>
   headings.map((variant) => (
@@ -35,7 +35,7 @@ export const Headings = () =>
         sampleText={headingText}
       />
     </Stack>
-  ));
+  ))
 
 export const BodyText = () =>
   texts.map((variant) => (
@@ -50,4 +50,4 @@ export const BodyText = () =>
         sampleText={bodyText}
       />
     </Stack>
-  ));
+  ))
