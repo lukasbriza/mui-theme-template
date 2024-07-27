@@ -1,20 +1,56 @@
-import { alpha } from '@mui/material'
+import { black, gray, white } from "./constants";
 
-import { primary } from './constants.js'
+
+export const monoChromaticPalette = {
+  color1: '#eeeeee',
+  color2: '#aeaeae',
+  color3: '#909090',
+  color4: '#5c5c5c',
+}
+
+export const primaryColors = {
+  main: monoChromaticPalette.color2,
+  light: monoChromaticPalette.color1,
+  dark: monoChromaticPalette.color4,
+} as const
+
 
 export const brandColors = {
-  primary: {
-    main: primary,
-    white: '#EFFAF3',
-    bright: '#D8F3E0',
-    soft: '#B3E7C6',
-    light: '#82D3A5',
-    dark: '#1D7E50',
-    heavyDark: '#155036',
-    black: '#092519',
-    // eslint-disable-next-line no-magic-numbers
-    alpha_5: alpha(primary, 0.05),
-    // eslint-disable-next-line no-magic-numbers
-    alpha_10: alpha(primary, 0.1),
+  primary: primaryColors,
+
+  surface: {
+    primary: monoChromaticPalette.color4,
+    secondary: monoChromaticPalette.color3,
+    tertiary: monoChromaticPalette.color2,
+    contrast: white,
+    background: monoChromaticPalette.color4
   },
+
+  bodyText: {
+    primary: black,
+    secondary: gray,
+    contrast: white
+  },
+
+  state: {
+    success: {
+      primary: '#51a147',
+      secondary: '#73976e'
+    },
+    warning: {
+      primary: '#e8c53c',
+      secondary: '#d7c066',
+    },
+    error: {
+      primary: '#b72121',
+      secondary: '#873434'
+    }
+  },
+
+  border: {
+    primary: primaryColors.main,
+    activeHover: primaryColors.dark,
+    contrast: white,
+  },
+
 } as const

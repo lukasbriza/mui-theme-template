@@ -1,12 +1,13 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
+/* eslint-disable @typescript-eslint/consistent-type-definitions */
 /* eslint-disable prettier/prettier */
-import type { webTheme } from './theme.js'
-import type { WebPalette } from './types/palette.js'
-import type { WebShape } from './types/shape.js'
-import type { WebSize } from './types/size.js'
-import type { WebSurfaces } from './types/surfaces.js'
-import type { WebTypographyVariants } from './types/typography.js'
+import type { webTheme } from './theme'
+import type { WebPalette } from './types/palette'
+import type { WebShape } from './types/shape'
+import type { WebSize } from './types/size'
+import type { WebTypographyVariants } from './types/typography'
 
-export type { WebFontWeight, WebTypographyVariants } from './types/typography.js'
+export type { WebFontWeight, WebTypographyVariants } from './types/typography'
 
 export type { Theme } from '@mui/material'
 
@@ -38,8 +39,7 @@ declare module '@mui/material/Typography' {
   }
 }
 
-declare module '@mui/material/styles/createTypography.js' {
-  // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
+declare module '@mui/material/styles/createTypography' {
   interface FontStyleOptions {
     /**
      * Disable fontWeightLight option
@@ -61,12 +61,10 @@ declare module '@mui/material/styles' {
 declare module '@mui/material/styles' {
   interface Theme {
     size: WebSize
-    surfaces: WebSurfaces
   }
   // allow configuration using `createTheme`
   interface ThemeOptions {
     size?: WebSize
-    surfaces?: WebSurfaces
   }
 }
 

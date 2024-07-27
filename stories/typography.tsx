@@ -1,26 +1,27 @@
 import { Typography } from '@mui/material'
 import { Stack } from '@mui/system'
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { Typeset } from '@storybook/blocks'
 
-import { basicColors } from '../src/colors/index.js'
+import { brandColors } from '../src/colors/index'
 import {
   variantsDefinition,
   fontFamily,
   fontWeightBold,
   fontWeightRegular,
   headingsFontFamily,
-} from '../src/fonts/index.js'
+} from '../src/fonts/index'
 
-const headingText = 'Case studies'
+const headingText = 'Typography text'
 const bodyText =
-  'We have successfully fulfilled the visions and requirements of 23+ completed projects that helped meet their business goals.'
+  'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem.'
 
 const fontSizeToPx = (fontSize: number) => `${fontSize}px`
 
 const headings = [variantsDefinition.h1, variantsDefinition.h2, variantsDefinition.h3, variantsDefinition.h4]
 
 const texts = [variantsDefinition.S, variantsDefinition.M, variantsDefinition.L, variantsDefinition.XL]
-const textColor = basicColors.black
+const textColor = brandColors.bodyText.primary
 
 export const Headings = () =>
   headings.map((variant) => (

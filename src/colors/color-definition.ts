@@ -1,17 +1,12 @@
 import type { Palette } from '@mui/material'
 
-import { bodyTextColors } from './body-text.js'
-import { borderColors } from './border.js'
-import { iconColors } from './icon.js'
-import { primaryColors } from './primary.js'
-import { stateColors } from './state.js'
-import { surfaceColors } from './surface.js'
+import { brandColors } from './brand'
 
 /**
  * Used color keys from Palette
  */
 type PaletteKey =
-  | keyof Pick<Palette, 'bodyText' | 'border' | 'icon' | 'primary' | 'surface'>
+  | keyof Pick<Palette, 'bodyText' | 'border' | 'primary' | 'surface'>
   | ('state.error' | 'state.success' | 'state.warning')
 
 type Colors = Record<string, unknown>
@@ -38,41 +33,36 @@ export const colorDefinition: ColorType[] = [
   {
     key: 'primary',
     title: 'Primary',
-    colors: primaryColors,
+    colors: brandColors.primary as Colors,
   },
   {
     key: 'bodyText',
     title: 'Text',
-    colors: bodyTextColors,
-  },
-  {
-    key: 'icon',
-    title: 'Icon',
-    colors: iconColors,
+    colors: brandColors.bodyText as Colors,
   },
   {
     key: 'surface',
     title: 'Surface',
-    colors: surfaceColors,
+    colors: brandColors.surface as Colors,
   },
   {
     key: 'border',
     title: 'Border',
-    colors: borderColors,
+    colors: brandColors.border as Colors,
   },
   {
     key: 'state.success',
     title: 'State Success',
-    colors: stateColors.success,
+    colors: brandColors.state?.success as Colors,
   },
   {
     key: 'state.warning',
     title: 'State Warning',
-    colors: stateColors.warning,
+    colors: brandColors.state?.warning as Colors,
   },
   {
     key: 'state.error',
     title: 'State Error',
-    colors: stateColors.error,
+    colors: brandColors.state?.error as Colors,
   },
 ]

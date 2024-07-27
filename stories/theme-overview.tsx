@@ -1,6 +1,6 @@
 import { Source } from '@storybook/blocks'
 
-import { useTheme } from '../src/index.js'
+import { useTheme } from '../src/index'
 
 export const ThemeOverview = () => {
   const theme = useTheme()

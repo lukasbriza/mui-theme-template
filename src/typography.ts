@@ -1,8 +1,8 @@
-import type { TypographyOptions, TypographyStyle } from '@mui/material/styles/createTypography.js'
-import type { TypographyVariantsOptions } from '@mui/material/styles/index.js'
+import type { TypographyOptions, TypographyStyle } from '@mui/material/styles/createTypography'
+import type { TypographyVariantsOptions } from '@mui/material/styles/index'
 
-import { breakpoints } from './breakpoints.js'
-import * as webFontStyle from './fonts/font-style.js'
+import { breakpoints } from './breakpoints'
+import * as webFontStyle from './fonts/font-style'
 
 const { fontFamily, headingsFontFamily, htmlFontSize, fontWeightRegular, fontWeightMedium, fontWeightBold } =
   webFontStyle

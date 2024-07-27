@@ -1,4 +1,3 @@
-export const primary = '#46B178'
-export const gray = '#25282C'
-export const black = '#16171A'
+export const gray = '#27292c'
+export const black = '#151617'
 export const white = '#FFFFFF'

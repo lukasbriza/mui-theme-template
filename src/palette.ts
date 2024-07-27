@@ -1,27 +1,18 @@
-import type { PaletteOptions } from '@mui/material/styles/index.js'
+import type { PaletteOptions } from '@mui/material/styles/index'
 
-import {
-  bodyTextColors,
-  stateColors,
-  iconColors,
-  borderColors,
-  surfaceColors,
-  basicColors,
-  primaryColors,
-} from './colors/index.js'
+import { brandColors } from './colors/index'
+import { white, black } from './colors/constants'
+
 
 export const palette: PaletteOptions = {
-  border: borderColors,
-  icon: iconColors,
-  state: stateColors,
-  surface: surfaceColors,
-  bodyText: bodyTextColors,
+  primary: brandColors.primary,
+  bodyText: brandColors.bodyText,
+  surface: brandColors.surface,
+  border: brandColors.border,
+  state: brandColors.state,
   common: {
-    white: basicColors.white,
-    black: basicColors.black,
+    white: white,
+    black: black,
   },
   mode: 'dark',
-  contrastThreshold: 4.5,
-  tonalOffset: 0.3,
-  primary: primaryColors,
 }

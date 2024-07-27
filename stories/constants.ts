@@ -1,4 +1,4 @@
-import { colorDefinition } from '../src/colors/color-definition.js'
+import { colorDefinition } from '../src/colors/color-definition'
 
 export const palette = colorDefinition.map(({ key, title, colors }) => ({
   title,

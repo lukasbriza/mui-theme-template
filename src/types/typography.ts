@@ -6,7 +6,7 @@ import type { CSSProperties } from 'react'
 export type WebFontWeight = 'bold' | 'medium' | 'regular'
 
 /**
- * E.ON typography variants.
+ * Typography variants.
  */
 export type WebTypographyVariants = {
   h1: CSSProperties
